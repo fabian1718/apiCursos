@@ -32,6 +32,31 @@ const { DataTypes } = require('sequelize');
  *           example: 1
  */
 
+// para el POST del video al usuario
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     courseToUser:
+ *       type: object
+ *       properties:
+ *         userId:
+ *           type: integer
+ *           example: 1
+ *         courseId:
+ *           type: integer
+ *           example: 4
+ *     registerVideo12:
+ *       type: object
+ *       properties:
+ *         userId:
+ *           type: integer
+ *           example: 1
+ *         courseId:
+ *           type: integer
+ *           example: 4
+ */
+
 const Videos = db.define("videos", {
     id: {
         type: DataTypes.INTEGER,

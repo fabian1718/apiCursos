@@ -11,16 +11,18 @@ const options ={
             description: "API para crear un aplicacion de cursos"
         }
     },
-    //rutas y modelos de tablas a documentar
+    //rutas y modelos de tablas a documentar 
     apis: [
         "./src/routes/users.routes.js",
         "./src/routes/courses.routes.js",
         "./src/routes/categories.routes.js",
         "./src/routes/videos.routes.js",
+        "./src/routes/usersCourses.routes.js",
         "./src/models/users.models.js",
         "./src/models/courses.models.js",
         "./src/models/categories.models.js",
-        "./src/models/videos.models.js"
+        "./src/models/videos.models.js",
+        "./src/models/usersCourses.models.js"
     ]
 }
 

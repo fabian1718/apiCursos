@@ -23,6 +23,34 @@ const router = Router();
  *                   example: OK
  */
 
+//Get one user with courses
+/**
+ * @openapi
+ * /api/v1/users/{id}/courses:
+ *   get:
+ *     summary: optiene un usuario con sus respectivos cursos
+ *     tags: [users]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         require: true
+ *         schema: 
+ *           type: integer
+ *           minimum: 1
+ *         description: este es el id del ususario
+ *     responses:
+ *       200:
+ *         description: OK
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status:
+ *                   type: string
+ *                   example: OK
+ */
+
 //Get one user
 /**
  * @openapi
