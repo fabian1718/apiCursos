@@ -1,6 +1,7 @@
 const db = require("../utils/database");
 const { DataTypes } = require("sequelize");
 
+//para el GET y para el POST
 /**
  * @openapi
  * components:
@@ -35,6 +36,36 @@ const { DataTypes } = require("sequelize");
  *         password:
  *           type: string
  *           example: 1234
+ */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     usersUpdate:
+ *       type: object
+ *       properties:
+ *         firstName:
+ *           type: string
+ *           example: Virginia
+ *         lastName:
+ *           type: string
+ *           example: Barco
+ *         email:
+ *           type: string
+ *           example: virginia@gmail.com
+ *         password:
+ *           type: string
+ *           example: 1234
+ *     registerUpdate:
+ *       type: object
+ *       properties:
+ *         firstName:
+ *           type: string
+ *           example: Carlos
+ *         password:
+ *           type: string
+ *           example: 54321
  */
 
 const Users = db.define("users", {
